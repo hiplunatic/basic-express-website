@@ -1,8 +1,66 @@
 body {
-  padding: 50px;
+  padding-top: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+nav.navbar-default{
+	background: #512DA8;
+}
 
-a {
-  color: #00B7FF;
+a,
+.navbar-default .navbar-brand,
+.jumbotron h1,
+.jumbotron p,
+.btn-default {
+  color: #FFF;
+}
+
+.jumbotron{
+	background-color: #D1C4E9;
+}
+
+.btn-primary,
+.btn-default{
+	background: #009688;
+	border-color: #B6B6B6;
+}
+
+.btn-default{
+	border: none;
+}
+
+.navbar{
+	margin-bottom: 0;
+}
+
+.navbar-brand{
+	padding: 15px 0;
+}
+.main-content{
+	margin-top: 30px;
+}
+
+.col-md-4{
+	padding-bottom: 25px;
+}
+
+.col-md-4 p{
+	color: #727272;
+}
+
+.col-md-4:nth-child(odd){
+	background-color: #D1C4E9;
+	color: #fff;
+}
+
+.col-md-4:nth-child(even) p{
+	color: #fff;
+}
+
+.col-md-4:nth-child(even){
+	background-color: #673AB7;
+	color: #fff;
+}
+
+footer{
+	margin-top: 25px;
 }
