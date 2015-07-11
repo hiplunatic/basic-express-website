@@ -8,7 +8,6 @@ var nodeMailer = require('nodemailer');
 
 var routes      = require('./routes/index');
 var about       = require('./routes/about');
-var emailSignup = require('./routes/email');
 
 var app = express();
 
@@ -26,7 +25,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/about', about);
-app.use('/email', email);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
