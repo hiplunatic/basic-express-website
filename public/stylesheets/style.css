@@ -8,8 +8,6 @@ nav.navbar-default{
 
 a,
 .navbar-default .navbar-brand,
-.jumbotron h1,
-.jumbotron p,
 .btn-default {
   color: #FFF;
 }
@@ -43,7 +41,8 @@ a,
 	padding-bottom: 25px;
 }
 
-.col-md-4 p{
+.col-md-4 p,
+.jumbotron p{
 	color: #727272;
 }
 
