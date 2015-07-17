@@ -7,12 +7,17 @@ router.get('/', function(req, res, next) {
   res.render('email', { title: 'Email Sign Up' });
 });
 
+/*
+	admin will need to put in thier gmail credentails to get email working (it will always fail without it).
+	if using another provider (such as yahoo or something, change line 16 to match desired provider).
+*/
+
 router.post('/send', function(req, res, next){
 	var transporter = nodemailer.createTransport({
 		service: 'Gmail',
 		auth: {
-			user: 'djensen81@gmail.com',
-			pass: 'J2272ensen'
+			user: '',
+			pass: ''
 		}
 	});
 
