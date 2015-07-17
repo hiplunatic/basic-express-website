@@ -12,7 +12,7 @@ router.post('/send', function(req, res, next){
 		service: 'Gmail',
 		auth: {
 			user: 'djensen81@gmail.com',
-			pass: 'something'
+			pass: 'J2272ensen'
 		}
 	});
 
@@ -20,9 +20,10 @@ router.post('/send', function(req, res, next){
 		from: 'John Doe <johndoe@outloook.com>',
 		to: 'djensen81@gmail.com',
 		subject: 'website submission',
-		text: 'you have a new submission with the following details...name: ' + req.body.name +'Email: ' + req.body.email + ' Message: ' + req.body.message,
+		text: 'you have a new submission with the following details...name: ' + req.body.name + 'Email: ' + req.body.email + ' Message: ' + req.body.message,
 		html: '<p>You got a submission with the following details...</p><ul><li>name: ' + req.body.name + '</li><li>email:' + req.body.email + '</li><li>Message: '+ req.body.message + '</li></ul>'
 	};
+
 	transporter.sendMail(mailOptions, function(error, info){
 		if(error){
 			console.log(error);
