@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 
-/* GET home page. */
+/* GET email us page. */
 router.get('/', function(req, res, next) {
   res.render('email', { title: 'Email Sign Up' });
 });
